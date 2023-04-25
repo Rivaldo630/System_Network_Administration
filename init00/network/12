@@ -1,0 +1,3 @@
+IP assigned to us by the DHCP server
+
+ip r s| awk '{ print $9 }' | sed -n '1p'

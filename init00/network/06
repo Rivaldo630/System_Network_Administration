@@ -1,0 +1,4 @@
+6-The full path of the file that contains the IP address and DNS servers that we use.
+
+
+/etc/resol.conf

@@ -1,0 +1,4 @@
+3-Command to identify the MAC address of the Wi-Fi card
+
+
+ifconfi wlan0 | grep "ether"

@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Scanning network..."
+nmap -sP 192.168.1.0/24 | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}' | while read line; do
+    name=$(nslookup $line | awk '/^Name:/{$1=""; print $0}')
+    mac=$(arp $line | awk '{print $3}')
+    echo "$line ($name) - $mac"
+done

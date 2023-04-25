@@ -1,0 +1,4 @@
+4- Command to identifiy the default gateway in the routing table on kali linux
+
+
+ip route show 

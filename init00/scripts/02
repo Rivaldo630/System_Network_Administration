@@ -1,0 +1,8 @@
+#!/bin/bash
+read -p "Entrez le nom d'utilisateur à supprimer : " username
+if who | grep -q "^$username"; then
+    echo "L'utilisateur est actuellement connecté. Veuillez réessayer plus tard."
+    exit 1
+fi
+userdel -r $username
+echo "L'utilisateur '$username' a été supprimé avec succès."

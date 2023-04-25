@@ -1,0 +1,4 @@
+#!/bin/bash
+while IFS=: read -r login password uid gid gecos path shell; do
+    echo "Login: $login, UID: $uid, Chemin: $path"
+done < /etc/passwd

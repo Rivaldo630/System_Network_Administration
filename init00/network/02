@@ -1,0 +1,19 @@
+2- Ethenet interface characteristics
+
+a - Identification of brodcast
+
+
+ip a s eth0 | grep brd | awk ' {print $4}' | sed -n '2p'
+
+
+b - Identification of all IP adresses which are part of the same subnet
+
+- Command to see all live address
+
+
+fping -g <subnet>
+
+
+- Command to see  possible usable addresses
+
+ipcalc <subnet>

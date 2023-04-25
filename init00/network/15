@@ -1,0 +1,6 @@
+15-Redirect
+Open the /etc/hosts file in a text editor with administrator privileges
+    sudo nano /etc/hosts
+Add the following line at the end of the file:
+    46.19.122.85   intra.42.fr
+Save changes and exit the text editor.
